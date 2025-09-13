@@ -1,0 +1,14 @@
+smart-timetable/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── scheduler.py
+│   └── templates/
+│       └── index.html
+├── static/
+│   └── style.css
+├── config.py
+├── run.py
+├── requirements.txt
+└── README.md
