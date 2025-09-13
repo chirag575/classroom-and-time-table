@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Timetable</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Smart Timetable Scheduler</h1>
+    <form method="POST" action="/generate">
+        <!-- Add input fields for subjects, faculty, classrooms -->
+        <button type="submit">Generate Timetable</button>
+    </form>
+    {% if timetable %}
+        <h2>Generated Timetable</h2>
+        <ul>
+        {% for day, sessions in timetable.items() %}
+            <li><strong>{{ day }}:</strong> {{ sessions }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
